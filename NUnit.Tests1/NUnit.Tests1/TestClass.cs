@@ -40,8 +40,6 @@ namespace NUnit.Tests1
             }
             logger.Trace($"Expected: {expected}, Actual: {actual}, {expected == actual}");
             Assert.IsTrue(expected == actual, $"Error! Wrong addition. Expected: {x - y} \u2260 {actual}");
-            
-
         }
 
         [Test]
