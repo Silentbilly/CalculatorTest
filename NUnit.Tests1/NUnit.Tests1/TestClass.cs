@@ -11,7 +11,7 @@ namespace NUnit.Tests1
     public class TestClass
     {
         [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
+        [TestCaseSource(typeof(Data), "DataTest")]
         public void TestMethodAdd(double x, double y)
         {
             Calculator.Methods temp = new Calculator.Methods();
