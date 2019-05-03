@@ -10,7 +10,7 @@ namespace NUnit.Tests1
         public double expected;
         public double? actual;
         Logger logger = LogManager.GetCurrentClassLogger();
-        public void logThis()
+        public void testAndLogThis()
         {
             logger.Trace($"Expected: {expected}, Actual: {actual}, {expected == actual}");
             if (expected != actual)

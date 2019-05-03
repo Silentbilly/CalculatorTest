@@ -18,7 +18,7 @@ namespace NUnit.Tests1
         {
             addLog.expected = x + y;
             addLog.actual = temp.addition(x, y);
-            addLog.logThis();
+            addLog.testAndLogThis();
         }
 
         [Test]
@@ -27,7 +27,7 @@ namespace NUnit.Tests1
         {
             addLog.expected = x - y;
             addLog.actual = temp.difference(x, y);
-            addLog.logThis();
+            addLog.testAndLogThis();
         }
 
         [Test]
@@ -36,7 +36,7 @@ namespace NUnit.Tests1
         {
             addLog.expected = x / y;
             addLog.actual = temp.division(x, y);
-            addLog.logThis();
+            addLog.testAndLogThis();
         }
 
         [Test]
@@ -45,7 +45,8 @@ namespace NUnit.Tests1
         {
             addLog.expected = x * y;
             addLog.actual = temp.multiplication(x, y);
-            addLog.logThis();
+            addLog.testAndLogThis();
         }
+
     }
 }
