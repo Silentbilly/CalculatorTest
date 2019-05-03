@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSource.cs" />
-    <Compile Include="LoggerAssertion.cs" />
+    <Compile Include="LoggerClass.cs" />
     <Compile Include="TestCalculator.cs" />
     <Compile Include="TestMethod.cs" />
   </ItemGroup>

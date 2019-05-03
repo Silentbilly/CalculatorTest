@@ -5,19 +5,22 @@ using NLog;
 
 namespace NUnit.Tests1
 {
-    class LoggerAssertion
+    class LoggerClass
     {
         public double expected;
         public double? actual;
+        public bool Comparison()
+        {
+            return expected == actual;
+        }
         Logger logger = LogManager.GetCurrentClassLogger();
-        public void testAndLogThis()
+        public void LogThis()
         {
             logger.Trace($"Expected: {expected}, Actual: {actual}, {expected == actual}");
-            if (expected != actual)
+            if (!Comparison())
             {
-                logger.Error($"Error! {expected} \u2260 {actual}");
+                logger.Error($"Error! {expected} IS NOT EQUAL {actual}");
             }
-            Assert.IsTrue(expected == actual, $"Error! Wrong addition. Expected: {expected} \u2260 {actual}");
         }
     }
 }

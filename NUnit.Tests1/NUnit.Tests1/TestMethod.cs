@@ -10,7 +10,7 @@ namespace NUnit.Tests1
     [TestFixture]
     public class TestMethod
     {
-        LoggerAssertion addLog = new LoggerAssertion();
+        LoggerClass addLog = new LoggerClass();
         Calculator.Methods temp = new Calculator.Methods();
         [Test]
         [TestCaseSource(typeof(DataSource), "DataTest")]
@@ -18,7 +18,8 @@ namespace NUnit.Tests1
         {
             addLog.expected = x + y;
             addLog.actual = temp.addition(x, y);
-            addLog.testAndLogThis();
+            addLog.LogThis();
+            Assert.IsTrue(addLog.Comparison(), $"Error! Wrong addition. Expected: {addLog.expected} \u2260 {addLog.actual}");
         }
 
         [Test]
@@ -27,7 +28,8 @@ namespace NUnit.Tests1
         {
             addLog.expected = x - y;
             addLog.actual = temp.difference(x, y);
-            addLog.testAndLogThis();
+            addLog.LogThis();
+            Assert.IsTrue(addLog.Comparison(), $"Error! Wrong difference. Expected: {addLog.expected} \u2260 {addLog.actual}");
         }
 
         [Test]
@@ -36,7 +38,8 @@ namespace NUnit.Tests1
         {
             addLog.expected = x / y;
             addLog.actual = temp.division(x, y);
-            addLog.testAndLogThis();
+            addLog.LogThis();
+            Assert.IsTrue(addLog.Comparison(), $"Error! Wrong division. Expected: {addLog.expected} \u2260 {addLog.actual}");
         }
 
         [Test]
@@ -45,8 +48,8 @@ namespace NUnit.Tests1
         {
             addLog.expected = x * y;
             addLog.actual = temp.multiplication(x, y);
-            addLog.testAndLogThis();
+            addLog.LogThis();
+            Assert.IsTrue(addLog.Comparison(), $"Error! Wrong multiplication. Expected: {addLog.expected} \u2260 {addLog.actual}");
         }
-
     }
 }
