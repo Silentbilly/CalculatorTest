@@ -56,7 +56,8 @@
   <ItemGroup>
     <Compile Include="DataSource.cs" />
     <Compile Include="LoggerAssertion.cs" />
-    <Compile Include="TestClass.cs" />
+    <Compile Include="TestCalculator.cs" />
+    <Compile Include="TestMethod.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="NLog.config">

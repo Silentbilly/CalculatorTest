@@ -13,7 +13,7 @@ namespace NUnit.Tests1
         LoggerAssertion addLog = new LoggerAssertion();
         Calculator.Methods temp = new Calculator.Methods();
         [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
+        [TestCaseSource(typeof(DataSource), "Datatest")]
         public void TesCalculatorAdd(double x, double y)
         {
             addLog.expected = x + y;
@@ -22,7 +22,7 @@ namespace NUnit.Tests1
         }
 
         [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
+        [TestCaseSource(typeof(DataSource), "Datatest")]
         public void TesCalculatorDiff(double x, double y)
         {
             addLog.expected = x - y;
@@ -31,7 +31,7 @@ namespace NUnit.Tests1
         }
 
         [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
+        [TestCaseSource(typeof(DataSource), "Datatest")]
         public void TesCalculatorDiv(double x, double y)
         {
             addLog.expected = x / y;
@@ -40,7 +40,7 @@ namespace NUnit.Tests1
         }
 
         [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
+        [TestCaseSource(typeof(DataSource), "Datatest")]
         public void TesCalculatorMult(double x, double y)
         {
             addLog.expected = x * y;

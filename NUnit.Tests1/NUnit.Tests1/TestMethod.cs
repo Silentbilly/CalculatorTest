@@ -47,41 +47,5 @@ namespace NUnit.Tests1
             addLog.actual = temp.multiplication(x, y);
             addLog.logThis();
         }
-
-        [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
-        public void TesCalculatorAdd(double x, double y)
-        {
-            addLog.expected = x + y;
-            addLog.actual = Calculator.Calculator.calculator(x, y, "+");
-            addLog.logThis();
-        }
-
-        [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
-        public void TesCalculatorDiff(double x, double y)
-        {
-            addLog.expected = x - y;
-            addLog.actual = Calculator.Calculator.calculator(x, y, "-");
-            addLog.logThis();
-        }
-
-        [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
-        public void TesCalculatorDiv(double x, double y)
-        {
-            addLog.expected = x / y;
-            addLog.actual = Calculator.Calculator.calculator(x, y, "/");
-            addLog.logThis();
-        }
-
-        [Test]
-        [TestCaseSource(typeof(Data), "Datatest")]
-        public void TesCalculatorMult(double x, double y)
-        {
-            addLog.expected = x * y;
-            addLog.actual = Calculator.Calculator.calculator(x, y, "*");
-            addLog.logThis();
-        }
     }
 }
