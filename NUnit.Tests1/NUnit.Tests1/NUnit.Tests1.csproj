@@ -54,7 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data.cs" />
+    <Compile Include="DataSource.cs" />
+    <Compile Include="LoggerAssertion.cs" />
     <Compile Include="TestClass.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NUnit.Tests1
 {
-    public static class Data
+    public static class DataSource
     {
         static public object[] DataTest = SetData();
         static object[] SetData()
