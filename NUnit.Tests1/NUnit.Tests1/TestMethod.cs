@@ -23,7 +23,7 @@ namespace NUnit.Tests1
         }
 
         [Test]
-        [TestCaseSource(typeof(DataSource), "Datatest")]
+        [TestCaseSource(typeof(DataSource), "DataTest")]
         public void TestMethodDiff(double x, double y)
         {
             addLog.expected = x - y;
@@ -33,7 +33,7 @@ namespace NUnit.Tests1
         }
 
         [Test]
-        [TestCaseSource(typeof(DataSource), "Datatest")]
+        [TestCaseSource(typeof(DataSource), "DataTest")]
         public void TestMethodDiv(double x, double y)
         {
             addLog.expected = x / y;
@@ -43,7 +43,7 @@ namespace NUnit.Tests1
         }
 
         [Test]
-        [TestCaseSource(typeof(DataSource), "Datatest")]
+        [TestCaseSource(typeof(DataSource), "DataTest")]
         public void TestMethodMult(double x, double y)
         {
             addLog.expected = x * y;

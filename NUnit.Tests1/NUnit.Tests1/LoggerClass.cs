@@ -13,13 +13,14 @@ namespace NUnit.Tests1
         {
             return expected == actual;
         }
+
         Logger logger = LogManager.GetCurrentClassLogger();
         public void LogThis()
         {
             logger.Trace($"Expected: {expected}, Actual: {actual}, {expected == actual}");
             if (!Comparison())
             {
-                logger.Error($"Error! {expected} IS NOT EQUAL {actual}");
+                logger.Error($"Error! {expected} is not equal {actual}");
             }
         }
     }
