@@ -8,7 +8,7 @@ using NLog;
 namespace NUnit.Tests1
 {
     [TestFixture]
-    public class TestClass
+    public class TestMethod
     {
         LoggerAssertion addLog = new LoggerAssertion();
         Calculator.Methods temp = new Calculator.Methods();
